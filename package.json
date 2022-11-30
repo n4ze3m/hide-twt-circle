@@ -1,8 +1,8 @@
 {
   "name": "hide-twt-circle",
   "displayName": "Hide twt circle",
-  "version": "0.0.0",
-  "description": "A basic Plasmo extension.",
+  "version": "0.0.1",
+  "description": "Hide twitter circle tweet from your timeline",
   "author": "n4ze3",
   "scripts": {
     "dev": "plasmo dev",
@@ -10,9 +10,11 @@
     "package": "plasmo package"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.4",
     "plasmo": "0.59.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
     "@plasmohq/prettier-plugin-sort-imports": "3.6.0",
@@ -24,6 +26,10 @@
     "typescript": "4.9.3"
   },
   "manifest": {
+    "permissions": [
+      "scripting",
+      "storage"
+    ],
     "host_permissions": [
       "https://*/*"
     ]
